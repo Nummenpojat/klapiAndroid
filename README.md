@@ -1,1 +1,0 @@
-## Android clien for Klapi
