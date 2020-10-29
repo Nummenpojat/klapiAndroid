@@ -4,12 +4,18 @@ Copyright (c) 2020 Elias Mäkelä
 
 import React from 'react';
 import WelcomeScreen from './components/WelcomeScreen'
-import {NativeRouter} from 'react-router-native'
+import TestPage from './components/TestPage'
+import {NativeRouter, Switch, Route} from 'react-router-native'
 
 const Main = () => {
   return (
     <NativeRouter>
-      <WelcomeScreen/>
+      <>
+        <Switch>
+          <Route exact path="/" component={WelcomeScreen}/>
+          <Route exact path="/testpage" component={TestPage}/>
+        </Switch>
+      </>
     </NativeRouter>
     );
 };
