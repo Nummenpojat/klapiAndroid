@@ -1,35 +1,16 @@
+/*
+Copyright (c) 2020 Elias Mäkelä
+*/
+
 import React from 'react';
-
-import {
-  StyleSheet,
-  View,
-  TouchableWithoutFeedback,
-  Text,
-  Alert,
-  StatusBar,
-} from 'react-native';
-
-
-
-const styles = StyleSheet.create({
-  container: {
-    marginTop: 5, 
-    flexDirection: 'row',
-    justifyContent: "center",
-    },
-  welcomeText: {
-    fontSize: 40,
-    color: "#cc0000",
-  }
-})
+import WelcomeScreen from './components/WelcomeScreen'
+import {NativeRouter} from 'react-router-native'
 
 const Main = () => {
   return (
-    <View style={styles.container}>
-    
-    <Text style={styles.welcomeText}>Tervetuloa Klapiin!</Text>
-
-    </View>
+    <NativeRouter>
+      <WelcomeScreen/>
+    </NativeRouter>
     );
 };
 
