@@ -1,1 +1,2 @@
-## Android clien for Klapi
+# klapiAndroid
+Android client for Klapi scouting software
