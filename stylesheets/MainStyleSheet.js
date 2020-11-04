@@ -1,7 +1,11 @@
+/*
+Copyright (c) 2020 Elias Mäkelä
+*/
+
 import {StyleSheet} from 'react-native'
 
 const styles = StyleSheet.create({
-    container: {
+    welcomeContainer: {
       marginTop: 5, 
       alignItems: "center",
       },
@@ -9,6 +13,7 @@ const styles = StyleSheet.create({
     welcomeText: {
       fontSize: 40,
       color: "#cc0000",
+      textAlign: "center",
       },
 
     buttonContainer: {
