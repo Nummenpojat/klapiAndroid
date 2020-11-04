@@ -1,3 +1,4 @@
 {"displayText": {
-     "welcomeMsg": "Tervetuloa Klapiin!",
-     "testMsg": "Tämä on testisivu." } }
+    "welcomeMsg": "Tervetuloa Klapiin!",
+    "testMsg": "Tämä on testisivu." ,
+    "changeViewBtn": "Vaihda näkymää" } }

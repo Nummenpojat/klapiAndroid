@@ -6,7 +6,6 @@ import React from 'react';
 import WelcomePage from './components/WelcomePage'
 import TestPage from './components/TestPage'
 import {NativeRouter, Switch, Route} from 'react-router-native'
-import {View, Text} from 'react-native'
 
 const Main = () => {
   

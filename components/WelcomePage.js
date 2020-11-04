@@ -18,7 +18,7 @@ const WelcomePage = ({history}) => {
 			</View>
 
 			<View style = {styles.buttonContainer}>
-				<Button color={styles.button.color} title="Vaihda näkymää" onPress={() => history.push("/testpage")}/>
+				<Button color={styles.button.color} title={displayText['changeViewBtn']} onPress={() => history.push("/testpage")}/>
 			</View>
 		</View>
 	)

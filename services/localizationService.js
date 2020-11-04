@@ -1,3 +1,7 @@
+/*
+Copyright (c) 2020 Elias Mäkelä
+*/
+
 import fi from '../i18n/fi.json'
 import en from '../i18n/en.json'
 import appConfig from '../appConfig.json'
