@@ -12,7 +12,7 @@ const TaskPage = ({history}) => {
 
 	return (
 		<View style={styles.welcomeContainer}>
-			<Text style={styles.welcomeText}>tasks</Text>
+			<Text style={styles.welcomeText}>{displayText ['navBar']['tasks']}</Text>
 		</View>
     )
 }

@@ -11,10 +11,10 @@ const getLanguage = () =>
     switch (appConfig['current_lang']) {
     
     case 'en':
-        return en["displayText"]
+        return en["generic"]
         
     case 'fi':
-        return fi["displayText"]
+        return  {"generic": fi["generic"], "navBar": fi["navBar"]}
     }
 }
 

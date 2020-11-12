@@ -13,11 +13,11 @@ const WelcomePage = ({history}) => {
 	return (
 		<View>
 			<View style={styles.welcomeContainer}>				
-				<Text style={styles.welcomeText}> {displayText['welcomeMsg']}</Text>	
+				<Text style={styles.welcomeText}> {displayText['generic']['welcomeMsg']}</Text>	
 			</View>
 
 			<View style = {styles.buttonContainer}>
-				<Button color={styles.button.color} title={displayText['changeViewBtn']} onPress={() => history.push("/checklist")}/>
+				<Button color={styles.button.color} title={displayText['generic']['changeViewBtn']} onPress={() => history.push("/checklist")}/>
 			</View>
 		</View>
 	)

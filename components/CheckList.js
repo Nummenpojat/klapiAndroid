@@ -13,7 +13,7 @@ const CheckList = ({history}) => {
 	return (
 		
 			<View style={styles.welcomeContainer}>
-				<Text style={styles.welcomeText}>Rastilistat</Text>
+				<Text style={styles.welcomeText}>{displayText['navBar']['checklist']}</Text>
 			</View>
 
 	)

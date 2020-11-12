@@ -15,22 +15,32 @@ const NavBar = ({history}) => {
 		
 			<View>
 				<Pressable onPress = {() => history.push('/map')}>
+				<View style={styles.navBarButtonContainer}>
 
-					<Text style={styles.navBarItem}>Sijainti</Text>
+					<Text style={styles.navBarButtonContent}> {displayText['navBar']['location']} </Text>
+
+					</View>
+
 				</Pressable>
 			</View>
 
 			
 			<View>
 				<Pressable onPress = {() => history.push('/tasks')}>
-				<Text style={styles.navBarItem}>Tehtävät</Text>
+					<View style={styles.navBarButtonContainer}>
+				<Text style={styles.navBarButtonContent}> {displayText['navBar']['tasks']} </Text>
+					</View>
 				</Pressable>
+
 			</View>
 
 
 			<View>
 				<Pressable onPress = {() => history.push('/checklist')}>
-					<Text style={styles.navBarItem}>Rastilistat</Text>
+				<View style={styles.navBarButtonContainer}>
+
+					<Text style={styles.navBarButtonContent}>{displayText['navBar']['checklist']}</Text>
+				</View>
 				</Pressable>
 			</View>
 

@@ -29,20 +29,23 @@ const styles = StyleSheet.create({
       flexDirection: "row",
       justifyContent: "space-around",
       backgroundColor: '#253764',
-      padding: 15,
-      alignSelf: "stretch",
+      paddingHorizontal: 15,
       
-
-
-
+      alignSelf: "stretch",
+    
     },
-    navBarItem: {
+
+    navBarButtonContainer: {
+      padding: 20,
+    },
+
+    navBarButtonContent: {
       color: "#ffffff",
 
     },
 
     mainContainer: {
-      backgroundColor: "#182b2b",
+      backgroundColor: "#ffffff",
       flexDirection: "column",
       alignItems: 'center',
       justifyContent: 'space-between',

@@ -9,7 +9,7 @@ import TestPage from './components/TestPage'
 import TaskPage from './components/Tasks'
 import NavBar from './components/NavBar'
 import CheckList from './components/CheckList'
-import Map from './components/Map'
+import Location from './components/Location'
 import {NativeRouter, Switch, Route} from 'react-router-native'
 import styles from './stylesheets/MainStyleSheet';
 
@@ -29,7 +29,7 @@ const Main = () => {
 
         <Route exact path="/checklist" component={CheckList}/>
 
-        <Route exact path = "/map" component={Map}/>
+        <Route exact path = "/map" component={Location}/>
 
       </Switch>
     
