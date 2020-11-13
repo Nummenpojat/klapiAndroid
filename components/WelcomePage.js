@@ -12,13 +12,12 @@ const WelcomePage = ({history}) => {
 	const displayText =  getLanguage()
 	return (
 		<View>
-			<View style={styles.welcomeContainer}>
-				
-				<Text style={styles.welcomeText}> {displayText['welcomeMsg']}</Text>	
+			<View style={styles.welcomeContainer}>				
+				<Text style={styles.welcomeText}> {displayText['generic']['welcomeMsg']}</Text>	
 			</View>
 
 			<View style = {styles.buttonContainer}>
-				<Button color={styles.button.color} title={displayText['changeViewBtn']} onPress={() => history.push("/testpage")}/>
+				<Button color={styles.button.color} title={displayText['generic']['changeViewBtn']} onPress={() => history.push("/checklist")}/>
 			</View>
 		</View>
 	)
