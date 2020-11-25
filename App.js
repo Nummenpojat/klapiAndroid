@@ -4,8 +4,6 @@ Copyright (c) 2020 Elias Mäkelä
 
 import React from 'react';
 import {Text, View} from 'react-native'
-import WelcomePage from './components/WelcomePage'
-import TestPage from './components/TestPage'
 import TaskPage from './components/Tasks'
 import NavBar from './components/NavBar'
 import CheckList from './components/CheckList'
@@ -22,8 +20,6 @@ const Main = () => {
 
 
       <Switch>
-
-        <Route exact path="/" render={()=><Text style={styles.welcomeText}>Hello</Text>}/>
 
         <Route exact path="/tasks" exact component={TaskPage}/>
 
