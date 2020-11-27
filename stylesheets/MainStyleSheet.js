@@ -29,14 +29,14 @@ const styles = StyleSheet.create({
       flexDirection: "row",
       justifyContent: "space-around",
       backgroundColor: '#253764',
-      paddingHorizontal: 15,
+      paddingHorizontal: 0,
       
       alignSelf: "stretch",
     
     },
 
     navBarButtonContainer: {
-      padding: 20,
+      paddingVertical: 20,
     },
 
     navBarButtonContent: {

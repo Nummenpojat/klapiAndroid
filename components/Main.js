@@ -23,7 +23,7 @@ const Main = ({t, i18n}) => {
 
       <Switch>
 
-        <Route exact path="/tasks" exact component={TaskPage}/>
+        <Route exact path="/tasks" component={TaskPage}/>
 
         <Route exact path="/checklist" component={CheckList}/>
 
@@ -37,8 +37,6 @@ const Main = ({t, i18n}) => {
 
     </NativeRouter>
 
-  <Text>{t('navBar.location')}</Text>
-  <Text>{i18n.language}</Text>
 
   </View>
 
