@@ -10,8 +10,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "i18next": "^19.8.4",
+    "i18next-conv": "^10.1.0",
     "react": "16.13.1",
+    "react-i18next": "^11.7.3",
     "react-native": "0.63.3",
+    "react-native-localize": "^2.0.1",
     "react-router-native": "^5.2.0"
   },
   "devDependencies": {

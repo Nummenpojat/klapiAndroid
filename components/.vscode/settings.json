@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    "../.buckconfig": true,
+    "../.eslintrc.js": true,
+    "../.prettierrc.js": true,
+    "../.gitignore": true,
+    "../.gitattributes": true
+  }
+}
