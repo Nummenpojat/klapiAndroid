@@ -17,8 +17,22 @@ const TaskPage = ({history}) => {
 
 
 	return (
-		<View style={styles.welcomeContainer}>
-			<Text style={styles.welcomeText}>{t('navBar.tasks')}</Text>
+		<View>
+			
+			<View style={styles.h1Container}>
+				<Text style={styles.h1Text}> { t( 'tasks.title') } </Text>
+			</View>
+			
+
+			<View style={styles.h2Container}>
+				<Text style={styles.h2Text}> { t( 'tasks.completed' ) } </Text>
+			</View>
+
+
+			<View style={styles.h2Container}>
+				<Text style={styles.h2Text}> { t( 'tasks.uncompleted' ) } </Text>
+			</View>
+
 		</View>
     )
 }

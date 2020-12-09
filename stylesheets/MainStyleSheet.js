@@ -5,16 +5,28 @@ Copyright (c) 2020 Elias Mäkelä
 import {StyleSheet} from 'react-native'
 
 const styles = StyleSheet.create({
-    welcomeContainer: {
+    h1Container: {
       marginTop: 5, 
       alignItems: "center",
       },
 
-    welcomeText: {
+    h1Text: {
       fontSize: 40,
       color: "#cc0000",
       textAlign: "center",
       },
+
+    h2Container: {
+      marginTop: 5, 
+      alignItems: "center",
+      },
+
+    h2Text: {
+      fontSize: 20,
+      color: "#cc0000",
+      textAlign: "center",
+      },
+    
 
     buttonContainer: {
       marginTop: 15, 

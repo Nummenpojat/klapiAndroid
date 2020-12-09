@@ -7,12 +7,13 @@ import { useTranslation, initReactI18next, Trans } from "react-i18next";
 const NavBarItem = ({path, text, history}) => (
 
 <View>
-<Pressable onPress = {() => history.push(path)}>
-    <View style={styles.navBarButtonContainer}>
-        <Text style={styles.navBarButtonContent}> {text} </Text>
-    </View>
-</Pressable>
+    <Pressable onPress = {() => history.push(path)}>
+        <View style={styles.navBarButtonContainer}>
+            <Text style={styles.navBarButtonContent}> {text} </Text>
+        </View>
+    </Pressable>
 </View>
+
 )
 
 export default NavBarItem;

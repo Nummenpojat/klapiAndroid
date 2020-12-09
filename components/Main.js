@@ -34,8 +34,9 @@ const Main = ({t, i18n}) => {
 
       <Route path="/" component={NavBar}/>
 
-
     </NativeRouter>
+
+
 
 
   </View>

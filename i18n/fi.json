@@ -8,5 +8,11 @@
       "location": "Sijainti",
       "tasks": "Tehtävät",
       "checklist": "Rastilista"
+    },
+
+    "tasks": {
+      "title": "Tehtävät",
+      "completed": "Suoritetut tehtävät:",
+      "uncompleted": "Suorittamattomat tehtävät:"
     }
 }
