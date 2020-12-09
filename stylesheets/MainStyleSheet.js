@@ -2,11 +2,7 @@
 Copyright (c) 2020 Elias Mäkelä
 */
 
-<<<<<<< HEAD
 import {StyleSheet, Dimensions} from 'react-native'
-=======
-import {StyleSheet, useWindowDimensions} from 'react-native'
->>>>>>> 5ac4e758cdbce14a31381d6be048b140dd452f03
 
 const styles = StyleSheet.create({
     h1Container: {
@@ -71,7 +67,6 @@ const styles = StyleSheet.create({
       flex: 1,
     },
 
-<<<<<<< HEAD
     topBarContainer: {
       flexDirection: "row",
       justifyContent: "space-around",
@@ -102,11 +97,9 @@ const styles = StyleSheet.create({
       height: null,
       resizeMode: 'contain',
   
-=======
     hamburgerMenu: {
       width: 0,
       height: useWindowDimensions().height
->>>>>>> 5ac4e758cdbce14a31381d6be048b140dd452f03
     }
 
   })
