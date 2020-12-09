@@ -3,11 +3,12 @@ Copyright (c) 2020 Elias Mäkelä
 */
 
 import React from 'react';
-import {Text, View} from 'react-native'
+import {Text, View, Image} from 'react-native'
 import TaskPage from './Tasks'
 import NavBar from './NavBar'
 import CheckList from './CheckList'
 import Location from './Location'
+import TopBar from './TopBar'
 import {NativeRouter, Switch, Route} from 'react-router-native'
 import styles from '../stylesheets/MainStyleSheet';
 
@@ -21,26 +22,24 @@ const Main = ({t, i18n}) => {
       <NativeRouter>
 
 
-      <Switch>
+      <Route path="/" component={TopBar}/>
 
-        <Route exact path="/tasks" component={TaskPage}/>
+        <Switch>
 
-        <Route exact path="/checklist" component={CheckList}/>
+          <Route exact path="/tasks" component={TaskPage}/>
 
-        <Route exact path = "/map" component={Location}/>
+          <Route exact path="/checklist" component={CheckList}/>
 
-      </Switch>
-    
+          <Route exact path = "/map" component={Location}/>
 
-      <Route path="/" component={NavBar}/>
+        </Switch>  
 
-    </NativeRouter>
+        <Route path="/" component={NavBar}/>
 
+      </NativeRouter>
 
-
-
-  </View>
-
+     {/* <Image source={require('../hamburger.png')} /> */}
+    </View>
 
 )
 }

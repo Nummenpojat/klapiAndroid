@@ -2,7 +2,7 @@
 Copyright (c) 2020 Elias Mäkelä
 */
 
-import {StyleSheet} from 'react-native'
+import {StyleSheet, Dimensions} from 'react-native'
 
 const styles = StyleSheet.create({
     h1Container: {
@@ -49,10 +49,13 @@ const styles = StyleSheet.create({
 
     navBarButtonContainer: {
       paddingVertical: 20,
+      width: Dimensions.get('window').width * 0.33
     },
 
     navBarButtonContent: {
       color: "#ffffff",
+      flexDirection: "row",
+      textAlign: "center",
 
     },
 
@@ -62,6 +65,38 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'space-between',
       flex: 1,
+    },
+
+    topBarContainer: {
+      flexDirection: "row",
+      justifyContent: "space-around",
+      backgroundColor: '#253764',
+      paddingHorizontal: 0,
+      alignSelf: "stretch",
+  
+    },
+
+    topBarContent: {
+      paddingVertical: 20,
+      color: "#ffffff",
+      width: Dimensions.get('window').width * 0.33,
+      textAlign: "center",    
+
+    },
+
+
+
+    mainViewContainer: {
+      flex: 1,
+
+    },
+    
+    hamburgerIcon: {
+      flex: 1,
+      width: null,
+      height: null,
+      resizeMode: 'contain',
+  
     }
 
   })
