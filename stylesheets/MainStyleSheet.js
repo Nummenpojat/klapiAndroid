@@ -2,7 +2,7 @@
 Copyright (c) 2020 Elias Mäkelä
 */
 
-import {StyleSheet} from 'react-native'
+import {StyleSheet, useWindowDimensions} from 'react-native'
 
 const styles = StyleSheet.create({
     h1Container: {
@@ -62,6 +62,11 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'space-between',
       flex: 1,
+    },
+
+    hamburgerMenu: {
+      width: 0,
+      height: useWindowDimensions().height
     }
 
   })
