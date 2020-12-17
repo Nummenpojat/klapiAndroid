@@ -9,10 +9,9 @@ import NavBar from './NavBar'
 import CheckList from './CheckList'
 import Location from './Location'
 import TopBar from './TopBar'
+
 import {NativeRouter, Switch, Route} from 'react-router-native'
 import styles from '../stylesheets/MainStyleSheet'
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const Main = ({t, i18n}) => {
 
@@ -20,7 +19,6 @@ const Main = ({t, i18n}) => {
     
     <View style={styles.mainContainer}>
 
-      <FontAwesomeIcon icon={faCoffee} />      
 
       <NativeRouter>
 
@@ -41,7 +39,6 @@ const Main = ({t, i18n}) => {
 
       </NativeRouter>
 
-     {/* <Image source={require('../hamburger.png')} /> */}
     </View>
 
 )

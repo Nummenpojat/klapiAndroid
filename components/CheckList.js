@@ -17,10 +17,11 @@ const CheckList = ({history}) => {
 
 
 	return (
-		
+		<View style={styles.mainViewContainer}>
 			<View style={styles.h1Container}>
 				<Text style={styles.h1Text}>{t('navBar.checklist')}</Text>
 			</View>
+		</View>
 
 	)
 }

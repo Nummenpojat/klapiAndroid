@@ -2,107 +2,109 @@
 Copyright (c) 2020 Elias Mäkelä
 */
 
-import {StyleSheet, Dimensions} from 'react-native'
+import {StyleSheet, Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
-    h1Container: {
-      marginTop: 5, 
-      alignItems: "center",
-      },
+  h1Container: {
+    marginTop: 5,
+    alignItems: 'center',
+  },
 
-    h1Text: {
-      fontSize: 40,
-      color: "#cc0000",
-      textAlign: "center",
-      },
+  h1Text: {
+    fontSize: 40,
+    color: '#cc0000',
+    textAlign: 'center',
+    zIndex: -1,
+  },
 
-    h2Container: {
-      marginTop: 5, 
-      alignItems: "center",
-      },
+  h2Container: {
+    marginTop: 5,
+    alignItems: 'center',
+  },
 
-    h2Text: {
-      fontSize: 20,
-      color: "#cc0000",
-      textAlign: "center",
-      },
-    
+  h2Text: {
+    fontSize: 20,
+    color: '#cc0000',
+    textAlign: 'center',
+  },
 
-    buttonContainer: {
-      marginTop: 15, 
-      alignItems: "center",
-      },
+  buttonContainer: {
+    marginTop: 15,
+    alignItems: 'center',
+  },
 
-    button: {
-      color: "#cc0000",
-      },
-    
-    navBarContainer: {
-      flexDirection: "row",
-      justifyContent: "space-around",
-      backgroundColor: '#253764',
-      paddingHorizontal: 0,
-      
-      alignSelf: "stretch",
-    
-    },
+  button: {
+    color: '#cc0000',
+  },
 
-    navBarButtonContainer: {
-      paddingVertical: 20,
-      width: Dimensions.get('window').width * 0.33
-    },
+  navBarContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    backgroundColor: '#253764',
+    paddingHorizontal: 0,
 
-    navBarButtonContent: {
-      color: "#ffffff",
-      flexDirection: "row",
-      textAlign: "center",
+    alignSelf: 'stretch',
+  },
 
-    },
+  navBarButtonContainer: {
+    paddingVertical: 20,
+    width: Dimensions.get('window').width * 0.33,
+  },
 
-    mainContainer: {
-      backgroundColor: "#ffffff",
-      flexDirection: "column",
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      flex: 1,
-    },
+  navBarButtonContent: {
+    color: '#ffffff',
+    flexDirection: 'row',
+    textAlign: 'center',
+  },
 
-    topBarContainer: {
-      flexDirection: "row",
-      justifyContent: "space-around",
-      backgroundColor: '#253764',
-      paddingHorizontal: 0,
-      alignSelf: "stretch",
-  
-    },
+  mainContainer: {
+    backgroundColor: '#ffffff',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    flex: 1,
+  },
 
-    topBarContent: {
-      paddingVertical: 20,
-      color: "#ffffff",
-      width: Dimensions.get('window').width * 0.33,
-      textAlign: "center",    
+  topBarContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    backgroundColor: '#253764',
+    paddingHorizontal: 0,
+    alignSelf: 'stretch',
+  },
 
-    },
+  topBarContent: {
+    paddingVertical: 20,
+    fontSize: 14,
+    color: '#ffffff',
+    width: Dimensions.get('window').width * 0.33,
+    textAlign: 'center',
+  },
 
+  mainViewContainer: {
+    flex: 1,
+  },
 
+  hamburgerIcon: {
+    flex: 1,
+    width: null,
+    height: null,
+    resizeMode: 'contain',
+  },
 
-    mainViewContainer: {
-      flex: 1,
+  dropDown: {
+    marginTop: 59,
+    backgroundColor: '#253764',
+    flexDirection: 'row',
+    position: "absolute",
+    width: Dimensions.get('window').width,
+  },
 
-    },
-    
-    hamburgerIcon: {
-      flex: 1,
-      width: null,
-      height: null,
-      resizeMode: 'contain',
-  
-    hamburgerMenu: {
-      width: 0,
-      height: useWindowDimensions().height
-    }
+  dropDownItem: {
+   margin: 12, 
 
-  })
+  }
 
-  
-export default styles
+});
+
+export default styles;

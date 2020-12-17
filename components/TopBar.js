@@ -2,35 +2,33 @@
 Copyright (c) 2020 Elias Mäkelä
 */
 
-import React from 'react'
-import {Text, View, Image} from 'react-native' 
-import styles from '../stylesheets/MainStyleSheet'
-import {useTranslation} from 'react-i18next'
+import {React, useState} from 'react';
+import {Text, View} from 'react-native';
+import styles from '../stylesheets/MainStyleSheet';
+import HamburgerIcon from './HamburgerIcon';
+import {useTranslation} from 'react-i18next';
+import HamburgerContent from './HamburgerContent';
 
 
 //DO NOT REMOVE. LOOKS USELESS BUT IS NECESSARY FOR REASONS I DO NOT FULLY UNDERSTAND
-import '../services/i18n'
-
+import '../services/i18n';
 
 const TopBar = ({history}) => {
-
-	const { t, i18n }  = useTranslation();
-
-	
-	return (
-		<View style={styles.topBarContainer}>
-
-             <Image style={styles.hamburgerIcon} source={require('../hamburger.png')}/>
-			
-            <Text style={styles.topBarContent}>Local group</Text>
-
-                
-            <Text style={styles.topBarContent}> logo </Text>
-
-            
-		</View>
-    )
-}
+  const {t, i18n} = useTranslation();
+  const [burger, setBurger] = useState(true)
 
 
-export default TopBar
+  return (
+    <View style={styles.topBarContainer}>
+      <HamburgerIcon />
+
+      <Text style={styles.topBarContent}>Local group</Text>
+
+      <Text style={styles.topBarContent}>logo</Text>
+
+      <HamburgerContent/>
+    </View>
+  );
+};
+
+export default TopBar;

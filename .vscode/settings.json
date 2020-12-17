@@ -1,0 +1,26 @@
+{
+  "files.exclude": {
+    "node_modules": true,
+    ".buckconfig": true,
+    ".eslintrc.js": true,
+    "metro.config.js": true,
+    ".vscode": true,
+    "android": true,
+    ".idea": true,
+    "components/.vscode": true,
+    ".gitignore": true,
+    ".gitattributes": true,
+    ".prettierrc.js": true,
+    ".watchmanconfig": true,
+    "app.json": true,
+    "com.android.builder.testing.api.DeviceException:": true,
+    "babel.config.js": true,
+    "package-lock.json": true,
+    "package.json": true,
+    "LICENSE": true,
+    "README.md": true,
+    "index.js": true,
+    ".flowconfig": true,
+    "__tests__": true
+  }
+}

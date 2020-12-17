@@ -18,8 +18,10 @@ const Location = ({history}) => {
 
 	
 	return (
-		<View style={styles.h1Container}>
-			<Text style={styles.h1Text}>{t('navBar.location')}</Text>
+		<View style={styles.mainViewContainer}>
+			<View style={styles.h1Container}>
+				<Text style={styles.h1Text}>{t('navBar.location')}</Text>
+			</View>
 		</View>
     )
 }
