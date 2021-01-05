@@ -11,17 +11,26 @@ import {useTranslation} from 'react-i18next';
 //DO NOT REMOVE. LOOKS USELESS BUT IS NECESSARY FOR REASONS I DO NOT FULLY UNDERSTAND
 import '../services/i18n';
 
-const HamburgerContent = ({history}) => {
+const HamburgerContent = ({history, burger}) => {
   const {t, i18n} = useTranslation();
-  return (
-    <Pressable onPress={setBurger(!burger)}>
+  if (burger) { 
+    return (
+    <Pressable>
       <View style={styles.dropDown}>
         <Text style={styles.dropDownItem}>[dropdown item]</Text>
         <Text style={styles.dropDownItem}>[dropdown item]</Text>
         <Text style={styles.dropDownItem}>[dropdown item]</Text>
       </View>
-    </Pressable>
-  );
-};
+  </Pressable>
+    )
+  }
+  else {
+    return (
+      null
+    )
+  }
+
+
+}
 
 export default HamburgerContent;

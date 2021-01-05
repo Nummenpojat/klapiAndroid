@@ -6,11 +6,12 @@ import React, {useState, useCallback} from 'react';
 import {Text, View, StyleSheet, Pressable, Image} from 'react-native';
 
 import styles from '../stylesheets/MainStyleSheet';
-import HamburgerContent from './HamburgerContent';
 
-const HamburgerIcon = () => {
+const HamburgerIcon = ({burger, toggleBurger}) => {
+
+
   return (
-    <Pressable style={styles.hamburgerIcon}>
+    <Pressable style={styles.hamburgerIcon} onPress={toggleBurger}>
       <Image
         style={styles.hamburgerIcon}
         source={require('../hamburger.jpeg')}

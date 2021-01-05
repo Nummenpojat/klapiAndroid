@@ -15,7 +15,7 @@ import '../services/i18n'
 
 const NavBar = ({history}) => {
 
-	const { t, i18n }  = useTranslation()
+	const { i18n, t }  = useTranslation()
 
 
 	return (

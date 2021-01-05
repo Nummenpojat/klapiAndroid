@@ -9,6 +9,7 @@ import NavBar from './NavBar'
 import CheckList from './CheckList'
 import Location from './Location'
 import TopBar from './TopBar'
+import HamburgerContent from './HamburgerContent'
 
 import {NativeRouter, Switch, Route} from 'react-router-native'
 import styles from '../stylesheets/MainStyleSheet'
@@ -20,16 +21,16 @@ const Main = ({t, i18n}) => {
     <View style={styles.mainContainer}>
 
 
-      <NativeRouter>
-
+    <NativeRouter>
 
       <Route path="/" component={TopBar}/>
 
+
         <Switch>
 
-          <Route exact path="/tasks" component={TaskPage}/>
+          <Route exact path = "/tasks" component={TaskPage}/>
 
-          <Route exact path="/checklist" component={CheckList}/>
+          <Route exact path = "/checklist" component={CheckList}/>
 
           <Route exact path = "/map" component={Location}/>
 

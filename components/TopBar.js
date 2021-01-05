@@ -2,7 +2,7 @@
 Copyright (c) 2020 Elias Mäkelä
 */
 
-import {React, useState} from 'react';
+import React, {useState} from 'react';
 import {Text, View} from 'react-native';
 import styles from '../stylesheets/MainStyleSheet';
 import HamburgerIcon from './HamburgerIcon';
@@ -14,19 +14,23 @@ import HamburgerContent from './HamburgerContent';
 import '../services/i18n';
 
 const TopBar = ({history}) => {
-  const {t, i18n} = useTranslation();
-  const [burger, setBurger] = useState(true)
+  const {t, i18n} = useTranslation()
+  const [burger, useBurger] = useState(true)
 
+  const toggleBurger = () => useBurger(!burger)
 
   return (
     <View style={styles.topBarContainer}>
-      <HamburgerIcon />
+      <HamburgerIcon burger={burger} toggleBurger={toggleBurger}/>
 
       <Text style={styles.topBarContent}>Local group</Text>
 
-      <Text style={styles.topBarContent}>logo</Text>
+      <Text style={styles.topBarContent}>logo </Text>
 
-      <HamburgerContent/>
+      <HamburgerContent burger={burger} toggleBurger={toggleBurger}/>
+
+
+
     </View>
   );
 };

@@ -98,6 +98,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     position: "absolute",
     width: Dimensions.get('window').width,
+    right: 0
   },
 
   dropDownItem: {
