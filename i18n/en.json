@@ -8,6 +8,11 @@
           "navBar": {
           "location": "Location",
           "tasks": "Tasks",
-          "checklist": "Checklist"
-        }
+          "checklist": "Checklist"},
+
+          "tasks": {
+            "title": "Tasks",
+            "completed": "Completed tasks:",
+            "uncompleted": "Uncompleted tasks:"
+          }
     }

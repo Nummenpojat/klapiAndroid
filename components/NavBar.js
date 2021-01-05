@@ -9,13 +9,13 @@ import NavBarItem from './NavBarItem'
 import {useTranslation} from 'react-i18next'
 
 
-//DO NOT REMOVE. LOOKS USELESS BUT IS APPRENTLY NECESSARY FOR REASONS I DO NOT FULLY UNDERSTAND
+//DO NOT REMOVE. LOOKS USELESS BUT IS APPARENTLY NECESSARY FOR REASONS I DO NOT FULLY UNDERSTAND
 import '../services/i18n'
 
 
 const NavBar = ({history}) => {
 
-	const { t, i18n }  = useTranslation();
+	const { i18n, t }  = useTranslation()
 
 
 	return (
