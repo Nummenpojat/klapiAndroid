@@ -4,7 +4,7 @@ Copyright (c) 2020 Elias Mäkelä
 
 import React from 'react'
 import {Text, View, Button, Pressable, FlatList} from 'react-native' 
-import styles from '../stylesheets/MainStyleSheet'
+import styles from '../stylesheets/Main/NavBarStyle'
 import NavBarItem from './NavBarItem'
 import {useTranslation} from 'react-i18next'
 

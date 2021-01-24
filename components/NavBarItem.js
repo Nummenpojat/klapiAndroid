@@ -2,7 +2,7 @@
 
 import React from 'react'
 import {Text, View, Button, Pressable, FlatList} from 'react-native' 
-import styles from '../stylesheets/MainStyleSheet'
+import styles from '../stylesheets/Main/NavBarStyle'
 
 const NavBarItem = ({path, text, history}) => (
 

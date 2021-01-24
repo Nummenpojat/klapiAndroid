@@ -11,7 +11,8 @@ const HamburgerIcon = ({burger, toggleBurger}) => {
 
 
   return (
-    <Pressable style={styles.hamburgerIcon} onPress={toggleBurger}>
+    <Pressable style={ styles.hamburgerIcon }  onPress={ toggleBurger }>
+    
       <Image
         style={styles.hamburgerIcon}
         source={require('../hamburger.jpeg')}

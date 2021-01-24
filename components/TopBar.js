@@ -4,7 +4,7 @@ Copyright (c) 2020 Elias Mäkelä
 
 import React, {useState} from 'react';
 import {Text, View} from 'react-native';
-import styles from '../stylesheets/MainStyleSheet';
+import styles from '../stylesheets/Main/TopBarStyle';
 import HamburgerIcon from './HamburgerIcon';
 import {useTranslation} from 'react-i18next';
 import HamburgerContent from './HamburgerContent';
