@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
     width: null,
     height: null,
     resizeMode: 'contain',
+    backgroundColor: 'transparent',
   },
 
   dropDown: {

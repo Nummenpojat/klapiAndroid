@@ -19,6 +19,7 @@ dropDown: {
    marginVertical: 12, 
    width: Dimensions.get('window').width * 0.33,
    textAlign: 'center',
+   color: '#FFFFFF',
 
 
   } } )
