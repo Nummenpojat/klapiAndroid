@@ -1,7 +1,6 @@
 # Klapi - a next-generation tool for the scout movement
 ## Purpose
-Purpose of Klapi is to be used in organizing events like scout camps and in activities in those events and weekly activity
-
+The purpose of Klapi is to be used in organizing events like scout camps and activities related to them, as well as weekly activity.
 ### Features
 
 
