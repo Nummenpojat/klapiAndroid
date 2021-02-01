@@ -21,7 +21,7 @@ const NavBar = ({history}) => {
 	return (
 		<View style={styles.navBarContainer}>
 
-			<NavBarItem path="map" text={t('navBar.location')} history={history}/>
+			<NavBarItem path="map" text={t('navBar.map')} history={history}/>
 			
 			<NavBarItem path="tasks" text={t('navBar.tasks')} history={history}/>
 			

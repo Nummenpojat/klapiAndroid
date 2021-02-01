@@ -6,7 +6,7 @@
             "changeViewBtn": "Change view" },
         
           "navBar": {
-          "location": "Location",
+          "map": "Map",
           "tasks": "Tasks",
           "checklist": "Checklist"},
 

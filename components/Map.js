@@ -12,7 +12,7 @@ import {useTranslation} from 'react-i18next'
 import '../services/i18n'
 
 
-const Location = ({history}) => {
+const Map = ({history}) => {
 
 	const { t, i18n }  = useTranslation();
 
@@ -20,11 +20,11 @@ const Location = ({history}) => {
 	return (
 		<View style={styles.mainViewContainer}>
 			<View style={styles.h1Container}>
-				<Text style={styles.h1Text}>{t('navBar.location')}</Text>
+				<Text style={styles.h1Text}>{t('navBar.map')}</Text>
 			</View>
 		</View>
     )
 }
 
 
-export default Location
+export default Map

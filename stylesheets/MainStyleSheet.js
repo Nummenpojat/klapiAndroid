@@ -23,12 +23,21 @@ const styles = StyleSheet.create({
   },
 
   h2Text: {
-    fontSize: 20,
+    fontSize: 25,
     color: '#cc0000',
     textAlign: 'center',
     zIndex: -1,
   },
 
+  bodyText: {
+    color: '#000000',
+    fontSize: 20
+  },
+
+  strikeThrough:
+  {
+    textDecorationLine: 'line-through'
+  },
 
 
   mainContainer: {

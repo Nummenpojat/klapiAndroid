@@ -24,9 +24,9 @@ const TopBar = ({history}) => {
     <View style={styles.topBarContainer}>
       <HamburgerIcon burger={burger} toggleBurger={toggleBurger}/>
 
-      <Text style={styles.topBarContent}>Local group</Text>
+      <Text style={styles.topBarContent}>Nummenpojat</Text>
 
-      <Logo></Logo>
+      <Logo/>
     
       <HamburgerContent burger={burger} toggleBurger={toggleBurger}/>
 

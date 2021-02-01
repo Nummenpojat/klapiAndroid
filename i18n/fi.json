@@ -5,7 +5,7 @@
       "changeViewBtn": "Vaihda näkymää"
     },
       "navBar": {
-      "location": "Sijainti",
+      "map": "Kartta",
       "tasks": "Tehtävät",
       "checklist": "Rastilista"
     },
