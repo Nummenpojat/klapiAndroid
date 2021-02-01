@@ -26,11 +26,16 @@ const TaskPage = ({history}) => {
 
 			<View style={styles.h2Container}>
 				<Text style={styles.h2Text}> { t( 'tasks.completed' ) } </Text>
+
+				<Text style={[styles.bodyText, styles.strikeThrough]}>Ota kuva leirinjohtajan kanssa</Text>
 			</View>
 
 
 			<View style={styles.h2Container}>
+
 				<Text style={styles.h2Text}> { t( 'tasks.uncompleted' ) } </Text>
+				<Text style={styles.bodyText}>Käy etsimässä hieno kivi</Text>
+
 			</View>
 
 		</View>

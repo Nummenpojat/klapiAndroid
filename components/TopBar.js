@@ -4,10 +4,11 @@ Copyright (c) 2020 Elias Mäkelä
 
 import React, {useState} from 'react';
 import {Text, View} from 'react-native';
-import styles from '../stylesheets/MainStyleSheet';
+import styles from '../stylesheets/Main/TopBarStyle';
 import HamburgerIcon from './HamburgerIcon';
 import {useTranslation} from 'react-i18next';
 import HamburgerContent from './HamburgerContent';
+import Logo from './Logo'
 
 
 //DO NOT REMOVE. LOOKS USELESS BUT IS NECESSARY FOR REASONS I DO NOT FULLY UNDERSTAND
@@ -23,10 +24,10 @@ const TopBar = ({history}) => {
     <View style={styles.topBarContainer}>
       <HamburgerIcon burger={burger} toggleBurger={toggleBurger}/>
 
-      <Text style={styles.topBarContent}>Local group</Text>
+      <Text style={styles.topBarContent}>Nummenpojat</Text>
 
-      <Text style={styles.topBarContent}>logo </Text>
-
+      <Logo/>
+    
       <HamburgerContent burger={burger} toggleBurger={toggleBurger}/>
 
 

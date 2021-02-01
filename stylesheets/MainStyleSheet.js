@@ -23,39 +23,22 @@ const styles = StyleSheet.create({
   },
 
   h2Text: {
-    fontSize: 20,
+    fontSize: 25,
     color: '#cc0000',
     textAlign: 'center',
+    zIndex: -1,
   },
 
-  buttonContainer: {
-    marginTop: 15,
-    alignItems: 'center',
+  bodyText: {
+    color: '#000000',
+    fontSize: 20
   },
 
-  button: {
-    color: '#cc0000',
+  strikeThrough:
+  {
+    textDecorationLine: 'line-through'
   },
 
-  navBarContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    backgroundColor: '#253764',
-    paddingHorizontal: 0,
-
-    alignSelf: 'stretch',
-  },
-
-  navBarButtonContainer: {
-    paddingVertical: 20,
-    width: Dimensions.get('window').width * 0.33,
-  },
-
-  navBarButtonContent: {
-    color: '#ffffff',
-    flexDirection: 'row',
-    textAlign: 'center',
-  },
 
   mainContainer: {
     backgroundColor: '#ffffff',
@@ -65,24 +48,10 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  topBarContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    backgroundColor: '#253764',
-    paddingHorizontal: 0,
-    alignSelf: 'stretch',
-  },
-
-  topBarContent: {
-    paddingVertical: 20,
-    fontSize: 14,
-    color: '#ffffff',
-    width: Dimensions.get('window').width * 0.33,
-    textAlign: 'center',
-  },
-
   mainViewContainer: {
     flex: 1,
+    position: 'relative',
+    top: 60
   },
 
   hamburgerIcon: {
@@ -90,6 +59,7 @@ const styles = StyleSheet.create({
     width: null,
     height: null,
     resizeMode: 'contain',
+    backgroundColor: 'transparent',
   },
 
   dropDown: {
@@ -102,7 +72,10 @@ const styles = StyleSheet.create({
   },
 
   dropDownItem: {
-   margin: 12, 
+   marginVertical: 12, 
+   width: Dimensions.get('window').width * 0.33,
+   textAlign: 'center',
+
 
   }
 

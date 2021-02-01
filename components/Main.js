@@ -7,7 +7,7 @@ import {Text, View, Image} from 'react-native'
 import TaskPage from './Tasks'
 import NavBar from './NavBar'
 import CheckList from './CheckList'
-import Location from './Location'
+import Map from './Map'
 import TopBar from './TopBar'
 import HamburgerContent from './HamburgerContent'
 
@@ -32,7 +32,7 @@ const Main = ({t, i18n}) => {
 
           <Route exact path = "/checklist" component={CheckList}/>
 
-          <Route exact path = "/map" component={Location}/>
+          <Route exact path = "/map" component={Map}/>
 
         </Switch>  
 

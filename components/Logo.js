@@ -7,7 +7,7 @@ import {Text, View, StyleSheet, Pressable, Image} from 'react-native';
 
 import styles from '../stylesheets/MainStyleSheet';
 
-const HamburgerIcon = ({burger, toggleBurger}) => {
+const Logo = ({burger, toggleBurger}) => {
 
 
   return (
@@ -15,10 +15,10 @@ const HamburgerIcon = ({burger, toggleBurger}) => {
     
       <Image
         style={styles.hamburgerIcon}
-        source={require('../hamburger.png')}
+        source={require('../logo.png')}
       />
     </Pressable>
   );
 };
 
-export default HamburgerIcon;
+export default Logo;
